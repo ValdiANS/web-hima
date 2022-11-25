@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import spaceIllustration from '../../../assets/image/space-illustration.png';
+import spaceIllustration from '../../assets/image/space-illustration.png';
 
 const WindowCard = ({
   title = 'Title',
@@ -26,6 +26,7 @@ const WindowCard = ({
         <Image
           src={imageSrc}
           alt='Title'
+          priority
           height={450}
           className='w-full object-cover object-center'
         />
